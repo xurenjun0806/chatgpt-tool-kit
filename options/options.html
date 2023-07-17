@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Chatgpt設定</title>
+    <link rel="stylesheet" href="../css/options.css">
+  </head>
+
+  <body>
+    <div id='items'>
+      <table>
+        <tr><td>
+          <p>API Key:</p>
+          <input type='password' id='chatgpt-api-key'/>
+        </td></tr>
+        <tr><td>
+          <p>選択可能最小文字数:</p>
+          <input type='number' id='user-prompt-min-length'/>
+          <p>選択可能最大文字数:</p>
+          <input type='number' id='user-prompt-max-length'/>
+        </td></tr>
+        <tr><td>
+          <p>プロンプト(system):</p>
+          <textarea id='system-prompt' class='prompt-input'></textarea>
+          <!-- <p>プロンプト(user):</p> -->
+          <!-- <textarea id='chatgpt-prompt-user'/></textarea> -->
+        </td></tr>
+      </table>
+    </div>
+    <div id='items'>
+      <button id='save-chatgpt-setting'>保存</button>
+    </div>
+
+    <div id="status" class="item"></div>
+    <script src='./options.js'></script>
+  </body>
+
+</html>

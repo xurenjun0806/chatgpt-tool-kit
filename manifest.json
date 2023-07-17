@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "chatgpt-tool-kit",
+  "description": "chatgpt-tool-kit",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/globals.js",
+        "scripts/ui.js",
+        "scripts/openaiapi.js",
+        "scripts/content.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "css/chatgptcard.css"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "storage",
+    "contextMenus"
+  ]
+}
