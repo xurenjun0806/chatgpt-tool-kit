@@ -1,5 +1,4 @@
 chrome.runtime.onInstalled.addListener(function() {
-  // 右クリックメニューに翻訳ByChatgptボタンを追加
   chrome.contextMenus.create({
     id: "callApi",
     title: "CallApi",
